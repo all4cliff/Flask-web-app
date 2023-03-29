@@ -30,8 +30,8 @@
 
     - name: Clone Flask web app from GitHub
       git:
-        repo: https://github.com/your-github-repo/flask-app.git
-        dest: /opt/flask-app
+        repo: git@github.com:all4cliff/Flask-web-app.git
+        dest: /opt/Flask-web-app
 
     - name: Start Flask web app as a service
       systemd:
@@ -52,5 +52,3 @@
 
           [Install]
           WantedBy=multi-user.target
-        
-...

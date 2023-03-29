@@ -1,6 +1,6 @@
 ---
 - name: Provision and configure EC2 instance for Flask web app
-  hosts: ec2
+  hosts: n3
   become: true
   vars:
     flask_app_port: 5000
